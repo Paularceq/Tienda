@@ -24,10 +24,10 @@ public class FirebaseStorageServiceImpl implements FirebaseStorageService {
     public String cargaImagen(MultipartFile archivoLocalCliente, String carpeta, Long id) {
         try {
             // El nombre original del archivo local del cliene
-            String extension = archivoLocalCliente.getOriginalFilename();
+            String extension = archivoLocalCliente.getOriginalFilename(); //extension -> recortes.png
 
             // Se genera el nombre según el código del articulo. 
-            String fileName = "img" + sacaNumero(id) + extension;
+            String fileName = "img" + sacaNumero(id) + extension; //filename -> img01recortes.png
 
             // Se convierte/sube el archivo a un archivo temporal
             File file = this.convertToFile(archivoLocalCliente);

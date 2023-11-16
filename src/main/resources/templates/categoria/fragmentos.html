@@ -3,7 +3,7 @@
       xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
     <head th:replace="~{layout/plantilla :: head}">
-        <title>The Good Tree</title>
+        <title>TechShop</title>
     </head>
     <body>
         <!-- 1 Sección para crear el boton de agregar... llamará a una ventana modal-->
@@ -146,12 +146,12 @@
                                                            id="activo"
                                                            th:field="*{activo}">
                                                 </div>
-                                               <div class="mb-3">
+                                                <div class="mb-3">
                                                     <label for="imagen">[[#{categoria.rutaImagen}]]</label>
                                                     <input class="form-control" type="file" name="imagenFile"
                                                            onchange="readURL(this);" />
                                                     <img id="blah" th:src="@{${categoria.rutaImagen}}" alt="your image" height="200"/>
-                                                </div> 
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

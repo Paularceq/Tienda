@@ -20,3 +20,4 @@ function addCard(formulario) {
     url = url + '/' + valor;
     $("#resultsBlock").load(url);
 }
+

@@ -17,4 +17,15 @@ public interface ProductoService {
     
     // Se elimina el producto que tiene el id pasado por parámetro
     public void delete(Producto producto);
+    
+    //JPA
+    public List<Producto>findByPrecioBetweenOrderByDescripcion(double precioInf, double precioSup);
+    
+    //JPQL
+    public List<Producto>metodoJPQL(double precioInf, double precioSup);
+    
+    //SQL
+    public List<Producto>metodoNativo(double precioInf, double precioSup);
+    
 }
+

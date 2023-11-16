@@ -9,7 +9,7 @@ public interface FirebaseStorageService {
     public String cargaImagen(MultipartFile archivoLocalCliente, String carpeta, Long id);
 
     //El BuketName es el <id_del_proyecto> + ".appspot.com#
-    final String BucketName = "techshop-db74d.appspot.com";
+    final String BucketName = "techshop-1f213.appspot.com";
 
     //Esta es la ruta básica de este proyecto Techshop
     final String rutaSuperiorStorage = "techshop";
@@ -18,5 +18,5 @@ public interface FirebaseStorageService {
     final String rutaJsonFile = "firebase";
     
     //El nombre del archivo Json
-    final String archivoJsonFile = "techshop-db74d-firebase-adminsdk-5187a-e82d276cd2.json";
+    final String archivoJsonFile = "techshop-1f213-firebase-adminsdk-hto6n-3f185a58ea.json";
 }
